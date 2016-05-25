@@ -1,0 +1,65 @@
+<ul>
+{{#each components as |component|}}
+  <li><button {{action "selectComponent" component.name}}>{{component.name}}</button></li>
+  {{component component.name}}
+{{/each}}
+</ul>
+
+<h2>{{active.name}} </h2><br>
+{{textarea value=active.code cols="120" rows="14"}} <br>
+{{textarea value=active.template cols="120" rows="14"}} <br>
+
+
+<button {{action "saveComponent" active}}>save</button>
+
+<br><br><br>
+
+{{input value=newname}}<br>
+
+<button {{action "newComponent"}}>new</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
